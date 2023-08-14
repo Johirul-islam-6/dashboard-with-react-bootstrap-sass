@@ -1,14 +1,36 @@
 import { Outlet } from "react-router-dom"
-import { Footer } from "./Footer"
+
 import { Navbar } from "./Navbar"
+import { LeftSideNav } from "./LeftSideNav"
+import { useState } from "react"
 
 
 export const Main = () => {
+
+
+  const [istoggle, setIsToggled] = useState(true);
+
+    const toggle = (value) => {
+    setIsToggled(value);
+    console.log(value)
+  };
+
   return (
     <>
-    <Navbar/>
-    <Outlet/>
-    <Footer/>
+
+    <div className="Layout">
+
+    <Navbar toggle={toggle} istoggle={istoggle}/>
+    <div className="d-flex">
+     <LeftSideNav toggle={istoggle} />
+     <Outlet />
+    </div>
+   
+  
+
+
+    </div>
+   
     
     </>
   )

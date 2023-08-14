@@ -1,4 +1,10 @@
+
+$bg-body-top : #4B0065;
+$bg-body : #0E0019;
+
 .dashbord {
-    background-color: blue;
+    background: linear-gradient(to bottom, $bg-body-top, $bg-body);
     color: #000;
+    width: 100% ;
+    color: #fff;
 }

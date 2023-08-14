@@ -1,0 +1,130 @@
+
+// color
+
+$bg-navbar : #110024;
+$bg-left-text : #5C3161;
+$bg-left-top : #1F003B;
+$bg-left-bottom : #110024;
+$bg-body : #4B0065;
+$bg-body-bottom : #0E0019;
+$bg-card : #0F001F;
+
+.layout-main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #cac9c9;
+
+}
+
+
+.leftside_Nav {
+   width: 18vw;
+    background: linear-gradient(to bottom, $bg-navbar, $bg-left-bottom);
+    //  border: 2px solid red;
+    color: #ffff;
+    height: 100vh;
+    position: relative;
+  .btn:hover{
+    border: unset !important;
+    
+
+  }
+  .dashbord-text{
+    color: #fff;
+  }
+  .dropdown-toggle{
+    font-size: 18px;
+  
+  }
+  .dropdown{
+    border-bottom: 0.5px solid rgb(92, 92, 92);
+    padding-bottom: 0.7rem;
+    position: relative;
+    
+  }
+
+   .card-body{
+    background-color: #4c00659c !important;
+    justify-content: start !important;
+
+    
+    
+        li{
+            // background-color: #0F001F !important;
+            justify-content: start !important;
+            text-decoration: none ;
+            list-style: none;
+            a{
+               color: #fff !important;
+                justify-content: start !important;
+
+                padding: 0 0.3rem;
+                &:hover{
+                  background-color: #98919f !important;
+                }
+            }
+        }
+
+       
+    
+    
+   }
+}
+
+
+// Navbar
+
+.navbar{
+    background: linear-gradient(to bottom, $bg-left-top, $bg-left-bottom);
+    // background-color: #9b96a1;
+    height: 4rem !important;
+    color: #fff !important;
+    .toggleDashbord {
+
+        transition: all ease-in;
+        cursor: pointer;
+
+        &:hover {
+            color: #cd6f05;
+        }
+    }
+    
+    .short_nav{
+        width: 83.6vw;
+        margin: 0 auto;
+        justify-content: end;
+        display: flex !important;
+
+        
+
+
+
+        form{
+         
+            .form-control {
+            background-color: $bg-body;
+            color: #fff !important;
+           }
+          
+           .custom-placeholder::placeholder {
+            color: #e8e8e8;
+            /* Change this to your desired color */
+          }
+        }
+
+        ul{
+            li{
+                a{
+                    color: #fff;
+                     &:hover {
+                        color: #cd6f05;
+                     }
+                }
+            }
+        }
+        
+
+
+
+    }
+}

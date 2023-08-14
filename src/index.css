@@ -1,4 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap");
 .dashbord {
-  background-color: blue;
+  background: linear-gradient(to bottom, #4B0065, #0E0019);
   color: #000;
+  width: 100%;
+  color: #fff;
+}
+
+.layout-main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #cac9c9;
+}
+
+.leftside_Nav {
+  width: 18vw;
+  background: linear-gradient(to bottom, #110024, #110024);
+  color: white;
+  height: 100vh;
+  position: relative;
+}
+.leftside_Nav .btn:hover {
+  border: unset !important;
+}
+.leftside_Nav .dashbord-text {
+  color: #fff;
+}
+.leftside_Nav .dropdown-toggle {
+  font-size: 18px;
+}
+.leftside_Nav .dropdown {
+  border-bottom: 0.5px solid rgb(92, 92, 92);
+  padding-bottom: 0.7rem;
+  position: relative;
+}
+.leftside_Nav .card-body {
+  background-color: rgba(76, 0, 101, 0.6117647059) !important;
+  justify-content: start !important;
+}
+.leftside_Nav .card-body li {
+  justify-content: start !important;
+  text-decoration: none;
+  list-style: none;
+}
+.leftside_Nav .card-body li a {
+  color: #fff !important;
+  justify-content: start !important;
+  padding: 0 0.3rem;
+}
+.leftside_Nav .card-body li a:hover {
+  background-color: #98919f !important;
+}
+
+.navbar {
+  background: linear-gradient(to bottom, #1F003B, #110024);
+  height: 4rem !important;
+  color: #fff !important;
+}
+.navbar .toggleDashbord {
+  transition: all ease-in;
+  cursor: pointer;
+}
+.navbar .toggleDashbord:hover {
+  color: #cd6f05;
+}
+.navbar .short_nav {
+  width: 83.6vw;
+  margin: 0 auto;
+  justify-content: end;
+  display: flex !important;
+}
+.navbar .short_nav form .form-control {
+  background-color: #4B0065;
+  color: #fff !important;
+}
+.navbar .short_nav form .custom-placeholder::-moz-placeholder {
+  color: #e8e8e8;
+  /* Change this to your desired color */
+}
+.navbar .short_nav form .custom-placeholder::placeholder {
+  color: #e8e8e8;
+  /* Change this to your desired color */
+}
+.navbar .short_nav ul li a {
+  color: #fff;
+}
+.navbar .short_nav ul li a:hover {
+  color: #cd6f05;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=index.css.map */
